@@ -11,10 +11,10 @@ A cricketer who practices daily record.
 4. Login by using Default User Id and  Password Any of Them
 
  User Id  : "Mostafa"
- Password : 1232
+ Password : 1234
 *******************
  User Id  : "String"
- Password : String
+ Password : "String"
 *******************
  User Id  : "User"
  Password : 1234
