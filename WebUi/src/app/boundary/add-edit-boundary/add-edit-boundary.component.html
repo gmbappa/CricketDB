@@ -1,0 +1,32 @@
+<form>
+
+  <div class="mb-3">
+    <label for="date" class="form-label">Date</label>
+    <input type="date" class="form-control" [(ngModel)]="date" name="date">
+  </div>
+
+  <div class="mb-3">
+    <label for="ballsTypeId" class="form-label">Balls Type</label>
+    <input type="text" class="form-control" name="ballsTypeId" [(ngModel)]="ballsTypeId" *ngIf="boundary.id!=0" disabled>
+    <select class="form-control" name="ballsTypeId" id="ballsTypeId" [(ngModel)]="ballsTypeId" *ngIf="boundary.id==0">
+      <option *ngFor="let type of ballsTypeList$|async" [value]="type.id">{{type.name}}</option>
+    </select>
+  </div>
+  
+  <div class="mb-3">
+    <label for="boundaryType" class="form-label">Boundary Type</label>
+    <input type="boundaryType" class="form-control"  [(ngModel)]="boundaryType" name="boundaryType">
+  </div>
+
+  <div class="mb-3">
+    <label for="numberOfboundary" class="form-label">Number of Boundary</label>
+    <input type="numberOfBoundary" class="form-control"  [(ngModel)]="numberOfBoundary" name="numberOfBoundary">
+  </div>
+
+  <button (click)="addboundary()" *ngIf="boundary.id==0" class="btn btn-primary">
+    Add
+  </button>
+  <button (click)="updateboundary()" *ngIf="boundary.id!=0" class="btn btn-primary">
+    Update
+  </button>
+</form>

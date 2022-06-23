@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\boundary\\add-edit-boundary",
+    "\\app\\boundary\\show-boundary",
+    "\\app\\dotball\\add-edit-dotball",
+    "\\app\\dotball\\show-dotball",
+    "\\app\\strikerate\\add-edit-strikerate",
+    "\\app\\strikerate\\show-strikerate"
+  ],
+  "SelectedNode": "\\app\\boundary",
+  "PreviewInSolutionExplorer": false
+}

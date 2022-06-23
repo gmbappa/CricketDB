@@ -1,0 +1,115 @@
+
+<div class="row">
+    
+    <div class="col-md-4">
+        <div class="card border-primary" style="max-width: 35rem;">
+            <div class="card-header">Strike Rate Last 4 days</div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                      <th>Date</th>
+                      <th>Name</th>
+                      <th>Rate</th> 
+                    </thead>
+                    <tbody>                   
+                        <tr *ngFor="let item of StrikeRate">
+                        <td>{{item.date}}</td>
+                        <td>{{item.name}}</td>                        
+                        <td>{{item.rate}}</td>  
+                      </tr>
+                    </tbody>
+                  </table>                  
+            </div>
+          </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card border-primary" style="max-width: 35rem;">
+            <div class="card-header">Boundary Last 4 days</div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                      <th>Date</th>
+                      <th>Name</th>
+                      <th>Rate</th> 
+                    </thead>
+                    <tbody>                   
+                        <tr *ngFor="let item of Boundary">
+                        <td>{{item.date}}</td>
+                        <td>{{item.name}}</td>                        
+                        <td>{{item.numberOfBoundary}}</td>  
+                      </tr>
+                    </tbody>
+                  </table>    
+            </div>
+          </div>
+
+          <div class="card border-primary" style="max-width: 35rem;">
+            <div class="card-header">Sum of score by week</div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                      <th>Score</th>                       
+                    </thead>
+                    <tbody>                   
+                        <tr *ngFor="let item of Score">
+                        <td>{{item.score}}</td>                        
+                      </tr>
+                    </tbody>
+                  </table>    
+            </div>
+          </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card border-primary" style="max-width: 35rem;">
+            <div class="card-header">Dot Ball Last 4 days</div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                      <th>Date</th>
+                      <th>Name</th>
+                      <th>Rate</th> 
+                    </thead>
+                    <tbody>                   
+                        <tr *ngFor="let item of DotBall">
+                        <td>{{item.date}}</td>
+                        <td>{{item.name}}</td>                        
+                        <td>{{item.dotBalls}}</td>  
+                      </tr>
+                    </tbody>
+                  </table>   
+            </div>
+          </div>
+
+          <div class="card border-primary" style="max-width: 35rem;">
+            <div class="card-header">Wickets</div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                      <th>Number of  Wicket</th>                       
+                    </thead>
+                    <tbody>                   
+                        <tr *ngFor="let item of NumberOfWicket">
+                        <td>{{item.numberOfWicket}}</td>                        
+                      </tr>
+                    </tbody>
+                  </table>    
+                  <table class="table table-striped">
+                    <thead>
+                      <th>Type of bowler wicket most</th>                       
+                    </thead>
+                    <tbody>                   
+                        <tr *ngFor="let item of NumberOfWicketName">
+                        <td>{{item.name}}</td>                        
+                      </tr>
+                    </tbody>
+                  </table> 
+            </div>
+          </div>
+    </div>
+
+</div>
+
+
+

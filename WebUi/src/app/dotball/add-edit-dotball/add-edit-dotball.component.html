@@ -1,0 +1,27 @@
+<form>
+
+  <div class="mb-3">
+    <label for="date" class="form-label">Date</label>
+    <input type="date" class="form-control" [(ngModel)]="date" name="date">
+  </div>
+
+  <div class="mb-3">
+    <label for="ballsTypeId" class="form-label">Balls Type</label>
+    <input type="text" class="form-control" name="ballsTypeId" [(ngModel)]="ballsTypeId" *ngIf="dotball.id!=0" disabled>
+    <select class="form-control" name="ballsTypeId" id="ballsTypeId" [(ngModel)]="ballsTypeId" *ngIf="dotball.id==0">
+      <option *ngFor="let type of ballsTypeList$|async" [value]="type.id">{{type.name}}</option>
+    </select>
+  </div>  
+
+  <div class="mb-3">
+    <label for="numberOfdotball" class="form-label">Number of dotball</label>
+    <input type="number" class="form-control"  [(ngModel)]="dotBalls" name="dotBalls">
+  </div>
+
+  <button (click)="adddotball()" *ngIf="dotball.id==0" class="btn btn-primary">
+    Add
+  </button>
+  <button (click)="updatedotball()" *ngIf="dotball.id!=0" class="btn btn-primary">
+    Update
+  </button>
+</form>
