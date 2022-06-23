@@ -61,7 +61,7 @@ alt="Login" width="500" height="400" border="10" />
 
 * Score Entry
 
-<img src="https://github.com/gmbappa/CricketDB/blob/main/DB/IMAGE/4.JPG" 
+<img src="https://github.com/gmbappa/CricketDB/blob/main/DB/IMAGE/5.JPG" 
 alt="Login" width="500" height="400" border="10" />
 
 
